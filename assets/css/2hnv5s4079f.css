@@ -12352,7 +12352,7 @@ p {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 99
+    z-index: 3;
 }
 
 .box {
