@@ -225,6 +225,9 @@ i {
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     /* change if the mask should have another color then white */
     z-index: 99;
@@ -234,8 +237,7 @@ i {
 #status {
     width: 260px;
     height: 200px;
-    margin: auto;
-   
+    margin:auto;
     /* centers the loading animation vertically one the screen */
     background-image: url(../img/preloader.gif);
     /* path to your loading animation */
