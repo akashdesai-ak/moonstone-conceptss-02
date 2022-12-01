@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Moonstone Conceptss</title>
+
+    <link rel="shortcut icon" href="./assets/img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smart-app-banner@2.0.0/dist/smart-app-banner.css"
+        type="text/css" media="screen">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,400i,700,700i&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,400i,700,700i&display=swap"
+        media="print" onload="this.media='all'">
+
+    <script src="./assets/js/head.60936455961063ae18e9.js"></script>
+
+
+
+    <link href="./assets/css/theword.css" rel="stylesheet">
+
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+
+</head>
+
+<body>
+
+    <div class="siteContent">
+        <div class="sim-grouprow sim-grouprow--default sim-grouprow--0 sim-grouprow--last ">
+            <div class="row ">
+                <div class="col-md flexgroup-col " data-breakpoint="md" style="">
+                    <section class="sim-module sim-module--default sim-module--content-detailsbodyonly ">
+                        <article class="articleContent group">
+
+                            <div class="sim-content-body">
+                                <p>
+                                    <script>
+                                        function hideErrorLabels() {
+                                            let errorMessageformName = document.getElementById("errorMessageFormName");
+                                            errorMessageformName.style.display = "none";
+
+                                            let errorMessageFormEmail = document.getElementById(
+                                                "errorMessageFormEmail");
+                                            errorMessageFormEmail.style.display = "none";
+
+                                            let errorMessageFormPhone = document.getElementById(
+                                                "errorMessageFormPhone");
+                                            errorMessageFormPhone.style.display = "none";
+
+                                            let errorMessageFormBusinessCompany = document.getElementById(
+                                                "errorMessageFormBusinessCompany");
+                                            errorMessageFormBusinessCompany.style.display = "none";
+                                        }
+
+                                        function onSubmit(token) {
+                                            //e.preventDefault()           
+
+                                            hideErrorLabels()
+
+                                            let res = validateForm()
+
+                                            if (!res) {
+                                                // console.log('success!',widgetId);
+
+                                                try {
+                                                    grecaptcha.reset(
+                                                        widgetId
+                                                    )
+                                                } catch (error) {
+                                                    console.log('error resetting!', error);
+                                                }
+
+                                                //console.log('restored token captcha')
+                                            } else
+                                                formSubmit()
+
+                                            //document.getElementById("contact-us-form").submit();
+                                        }
+
+                                        function validateForm() {
+                                            //console.log('validating form')
+
+                                            let res = true;
+
+                                            let x = document.forms["contact-us-form"]["firstname"].value;
+                                            if (x == "") {
+                                                let errorMessageformName = document.getElementById(
+                                                    "errorMessageFormName");
+                                                errorMessageformName.style.display = "block";
+                                                res = false;
+                                            }
+
+                                            x = document.forms["contact-us-form"]["emailaddress"].value;
+                                            if (x == "") {
+                                                let errorMessageFormEmail = document.getElementById(
+                                                    "errorMessageFormEmail");
+                                                errorMessageFormEmail.style.display = "block";
+                                                res = false;
+                                            }
+
+                                            x = document.forms["contact-us-form"]["phone"].value;
+                                            if (x == "") {
+                                                let errorMessageFormPhone = document.getElementById(
+                                                    "errorMessageFormPhone");
+                                                errorMessageFormPhone.style.display = "block";
+                                                res = false;
+                                            }
+
+                                            x = document.forms["contact-us-form"]["company"].value;
+                                            if (x == "") {
+                                                let errorMessageFormPhone = document.getElementById(
+                                                    "errorMessageFormBusinessCompany");
+                                                errorMessageFormPhone.style.display = "block";
+                                                res = false;
+                                            }
+
+                                            return res;
+                                        }
+                                    </script>
+                                    <script>
+                                        function removejscssfile(filename, filetype) {
+                                            var targetelement = (filetype == "js") ? "script" : (filetype == "css") ?
+                                                "link" : "none" //determine element type to create nodelist from
+                                            var targetattr = (filetype == "js") ? "src" : (filetype == "css") ? "href" :
+                                                "none" //determine corresponding attribute to test for
+                                            var allsuspects = document.getElementsByTagName(targetelement)
+                                            for (var i = allsuspects.length; i >=
+                                                0; i--
+                                            ) { //search backwards within nodelist for matching elements to remove
+                                                if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null &&
+                                                    allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1)
+                                                    allsuspects[i].parentNode.removeChild(allsuspects[
+                                                        i]) //remove element by calling parentNode.removeChild()
+                                            }
+                                        }
+
+                                        removejscssfile("theword.css",
+                                            "css") //remove all occurences "somestyle.css" on page
+
+                                        let head = document.getElementsByTagName('head')[0];
+                                        let link = document.createElement('link')
+                                        link.rel = 'stylesheet'
+                                        link.type = 'text/css'
+                                        link.href =
+                                            './assets/css/2hnv5s4079f.css'
+                                        head.parentNode.insertBefore(link, head)
+
+                                        link = document.createElement('link')
+                                        link.rel = 'stylesheet'
+                                        link.href =
+                                            'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap'
+                                        head.parentNode.insertBefore(link, head)
+
+                                        link = document.createElement('link')
+                                        link.rel = 'preconnect'
+                                        link.href = 'https://netdna.bootstrapcdn.com/'
+                                        head.parentNode.insertBefore(link, head)
+                                    </script>
+                                    <script async="">
+                                        (function () {
+                                            var css = document.createElement('link');
+                                            css.href =
+                                                '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+                                            css.rel = 'stylesheet';
+                                            css.type = 'text/css';
+                                            document.getElementsByTagName('head')[0].appendChild(css);
+                                        })();
+                                    </script>
+                                </p>
+                                <style>
+                                    @media only screen and (min-width: 1001px) {}
+
+                                    @media only screen and (min-width: 701px) and (max-width: 1000px) {}
+
+                                    @media only screen and (max-width: 700px) {}
+                                </style>
+
+
+                                <div class="containerEl">
+
+                                    <!-- header -->
+                                    <header class="header header-innerstatic cta-normal nav-innerstatic">
+                                        <div class="wrapper">
+                                            <div class="header-inner">
+                                                <div class="logo"><span id="sitelogo"><a href="/index.html"
+                                                            title="Moonstone Conceptss"> <img id="logoimg"
+                                                                src="./assets/img/Logo-1-Transperent.png" style="width: 300px;" />
+                                                        </a></span></div>
+                                                <div class="cta-custom">
+                                                    <p style="margin-top: -10px;"><a href="#sb-module-10683165">Get Connected</a></p>
+                                                    <p style="text-align: center;"><a class="mobile-number"
+                                                            href="tel:+919702213621">+91-9702213621</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <!-- header close -->
+
+                                    <div class="container p-5 service-info">
+                                        <h2 class=" text-center">Annual Reports</h2>
+                                        <ul class="navigation-breadcrumbs">
+                                            <li><a href="./index.html">Home </a></li>
+                                            <li> > </li>
+                                            <li> Annual Reports</li>
+                                        </ul>
+                                        <div class="info-para">
+
+                                            <p>Flyers are perfect for informing clients via mail of promotional offers and current events. By sending an eye-catching and stylish flyer to your customers, you increase the possibility of converting the mailing list into sales.</p>
+                                            <p>A good designed, catchy with vibrant colored flyers always reflects the expertise of your Company.
+                                            </p>
+                                        </div>
+                                        <h2 class="enquiry-text">  If you would like to learn more, give us a call at<a
+                                                href="tel:+919702213621">+91-9702213621</a> or send us a website inquiry today!</h2>
+                                    </div>
+
+                                    <!-- footer -->
+                                    <footer class="footer footer-fluid footer-navigation-content">
+                                        <div class="wrapper">
+                                            <div class="clearfix" xmlns:v="" typeof="v:Organization">
+                                                <div class="footer-box footer-box-navigation">
+                                                    <nav class="bottom-nav"><a href="/index.html" title="Home">Home</a>
+                                                    </nav>
+                                                </div>
+                                                <div class="footer-box footer-box-content">
+                                                    <div class="custom-footer">
+                                                        <div class="custom-footer-container">
+                                                            <div class="footer-item"><a href="/index.html"><img
+                                                                        src="./assets/img/Logo-1.png"
+                                                                        width="280px" />
+                                                                </a></div>
+                                                            <div class="footer-item">
+                                                                <h3>Call For Information</h3>
+                                                                <div class="text-with-icon"><img
+                                                                        src="./assets/img/footer-phone-icon.png" />
+                                                                    <p><a href="tel:+919702213621">+91-9702213621</a>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="text-with-icon"><img
+                                                                        src="./assets/img/footer-phone-icon.png" />
+                                                                    <p><a href="tel:+919702639991">+91-9702639991</a>
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="footer-item">
+                                                                <h3>Email</h3>
+                                                                <div class="text-with-icon"><img
+                                                                        src="./assets/img/footer-mail-icon.png" />
+                                                                    <p><a href="mailto:moonstoneconceptss@gmail.com"><span
+                                                                                style="font-size: 15px;">info@moonstoneconceptss.in</span>
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="footer-item">
+                                                                <h3 class="text-center">Address</h3>
+                                                                <div class="text-with-icon"><img
+                                                                        src="./assets/img/map-pin.png" />
+                                                                    <p>3, Chandrama,
+                                                                        Govind<br> Bacchaji Road,
+                                                                        Charai, <br>Thane (W)-400603,
+                                                                        Mumbai,<br> Maharashtra, India.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="footer-item"><img src="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="social-handels">
+                                                        <h3>Find Us On Social Media</h3>
+                                                        <a href=""><i class="fa fa-instagram"></i></a>
+                                                        <a href=""><i class="fa fa-facebook-official"></i></a>
+                                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                                    </div>
+                                                    <div class="privacy-policy-section">
+                                                        <p>&copy; Copyright 2022 | All Rights Reserved | <a
+                                                                href="./index.html">Moonstone Conceptss</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                    <!-- footer End -->
+
+                                </div>
+                            </div>
+
+
+                        </article>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+        <a href="#page-home" onclick="" class="back-to-top" id="toTop"> <img src="./assets/img/back-to-top_1.png" />
+        </a>
+
+        <div class="start-chat">
+            <a href="https://wa.me/+919702213621">
+                <p><i class="fa fa-whatsapp"></i> <span>Start Chat</span></p>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#toTop').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#toTop').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#toTop').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>

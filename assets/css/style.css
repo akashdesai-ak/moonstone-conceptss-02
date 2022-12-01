@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #b90e0a !important;
+    --secondary-color: #fa8128 !important;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.start-chat {
+    position: fixed;
+    padding: 15px !important;
+    transform: rotate(270deg);
+    background-color: var(--secondary-color);
+    z-index: 9999;
+    top: 50%;
+    left: -45px;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-chat a {
+
+    color: aliceblue !important;
+}
+
+.start-chat a i {
+    color: #fff !important;
+    background: #25d366;
+    /* padding: 5px; */
+    border-radius: 100%;
+    font-size: 20px;
+
+}
+
+.start-chat:hover {
+    background-color: var(--primary-color);
+}
+
+.our-projects a,
+i {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-projects a:hover i {
+    margin-left: 10px;
+}
+
+.navigation-breadcrumbs {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.navigation-breadcrumbs li {
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+.navigation-breadcrumbs li a {
+    color: var(--primary-color);
+}
+
+.social-handels {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.social-handels a {
+    margin: 10px;
+
+}
+
+.social-handels a:hover i {
+    color: #F9BF13 !important;
+}
+
+.service-info h2 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.info-para {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.info-para p {
+    margin: 10px;
+    line-height: 2rem;
+}
+
+.enquiry-text {
+    padding: 25px;
+    text-align: center;
+    font-size: 20px !important;
+    animation: enquiry-text 10s ease-in-out infinite;
+}
+
+.enquiry-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes enquiry-text {
+    0% {
+        color: var(--secondary-color);
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: var(--secondary-color);
+    }
+}
+
+
+/* collapsible */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    box-shadow: 0 0 2px 0 gray;
+}
+
+.collapsible>i {
+    color: var(--primary-color);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.project-btn {
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+
+.second-strategies {
+    background-color: var(--primary-color);
+}
+
+.second-strategies h3 {
+    color: #fff !important;
+}
+
+.second-strategies img {
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 2px
+}
+.second-strategies .strategies-icons-img-txt{
+    border: 2px solid var(--primary-color);
+
+}
+.second-strategies .strategies-icons-img-txt:hover{
+    border:2px solid #fff;
+}
